@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Open Youtube:
+Youtube URL:
 https://youtu.be/A6g8xc0MoiY?si=txmBCQumUcNopdwe&t=7598
 
 First, run the development server:

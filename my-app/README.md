@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 Youtube URL:
-https://youtu.be/A6g8xc0MoiY?si=txmBCQumUcNopdwe&t=7598
+https://youtu.be/A6g8xc0MoiY?si=_DNbCv_7GT9wKvB_&t=9310
 
 First, run the development server:
 

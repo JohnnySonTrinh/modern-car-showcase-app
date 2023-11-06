@@ -8,20 +8,15 @@ import { fuels, yearsOfProduction } from '@/constants';
 export default function Home() {
   const [allCars, setAllCars] = useState([]);
   const [loading, setLoading] = useState('');
-
   // search states
   const [manufacturer, setManufacturer] = useState('');
   const [model, setModel] = useState('');
-
   // filter states
   const [fuel, setFuel] = useState('');
   const [year, setYear] = useState(2022);
-
   const [limit, setLimit] = useState(10);
-
   const getCars = async () => {
     setLoading(true);
-
     try {
       const result = await fetchCars({
         manufacturer: manufacturer,
@@ -30,7 +25,6 @@ export default function Home() {
         limit: limit || 10,
         model: model || '',
       });
-
       setAllCars(result);
     } catch (error) {
       console.log(error);
@@ -38,7 +32,6 @@ export default function Home() {
       setLoading(false);
     }
   };
-
   useEffect(() => {
     getCars();
   }, [fuel, year, limit, manufacturer, model]);
@@ -70,7 +63,6 @@ export default function Home() {
                 <CarCard car={car} />
               ))}
             </div>
-
             <ShowMore
               pageNumber={(limit || 10) / 10}
               isNext={(limit || 10) > allCars.length}
